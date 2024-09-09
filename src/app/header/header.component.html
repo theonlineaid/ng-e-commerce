@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxFlexFill>
+      <!-- Logo Section -->
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <!-- <mat-icon class="logo-icon">store</mat-icon> -->
+        <span class="logo-text">{{ title }}</span>
+      </div>
+  
+      <!-- Search Bar -->
+      <div fxLayout="row" fxLayoutAlign="center center" fxFlex="50">
+        <app-custom-search-bar></app-custom-search-bar>
+      </div>
+  
+      <!-- Navigation and User Account Section -->
+      <div fxLayout="row" fxLayoutAlign="end center">
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Home</button>
+          <button mat-menu-item>Products</button>
+          <button mat-menu-item>About Us</button>
+          <button mat-menu-item>Contact</button>
+        </mat-menu>
+        <button mat-icon-button aria-label="Shopping cart">
+          <!-- <mat-icon>shopping_cart</mat-icon> -->
+        </button>
+        <button mat-button color="accent">Login</button>
+      </div>
+    </div>
+  </mat-toolbar>
+
+
+
+  
+  
